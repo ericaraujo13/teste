@@ -1,0 +1,22 @@
+<div class="mb-12">
+  <%= link_to "Voltar", documents_path, class: "btn-return"%>
+</div>
+<div class="title-container">
+  <div class="flex justify-between items-center">
+    <div>
+      <h1 class="title">Informações do documento</h1>
+    </div>
+    <div>
+      <%= link_to 'Visualizar documento', @document.file.url, target:'_blank', class:'btn-primary' %>
+      <%= link_to 'Excluir', document_path(@document), data: { turbo_method: :delete }, class:"btn-destroy" %>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white rounded-lg shadow p-3">
+  <div class="space-y-3">
+    <p><span class="font-semibold">Nome do arquivo:</span> <%= @document.file_name %></p>
+    <hr>
+    <p><span class="font-semibold">URL do arquivo:</span> <%= @document.path %></p>
+  </div>
+</div>

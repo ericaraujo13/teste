@@ -1,0 +1,13 @@
+<div class="title-container">
+  <div class="flex justify-between items-center">
+    <div>
+      <h1 class="title">Documentos</h1>
+    </div>
+    <div>
+      <%= link_to "Adicionar documento", new_document_path, class: "btn-primary"%>
+    </div>
+  </div>
+</div>
+<div>
+  <%= render 'table' %>
+</div>

@@ -1,0 +1,10 @@
+<%= form_with model: @document do |f| %>
+  <div class="space-y-3">
+    <div class="w-1/2">
+      <%= f.label :file, 'Adicione o documento', class: "block mb-2 text-sm font-medium text-gray-900" %>
+      <%= f.file_field :file, class: "input-file", accept: "application/pdf" %>
+    </div>
+  </div>
+
+  <%= f.submit "Adicionar", class: "btn-primary mt-2" %>
+<% end %>
