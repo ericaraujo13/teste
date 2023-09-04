@@ -70,7 +70,8 @@ rails db:create
 5. Start Project
 
   bin/dev
-
+6. Run tests
+   bundle exec rspec
 
 ## Portuguese Version
 
@@ -134,3 +135,6 @@ Certifique-se de ter o seguinte software instalado:
 5. Rode o servidor
 
   bin/dev
+
+6. Rode os testes
+   bundle exec rspec
